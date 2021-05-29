@@ -1,0 +1,66 @@
+.stock-card {
+  width: 21.375rem;
+  height: 13.8125rem;
+  background: var(--secondary-color);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  border-left: solid var(--positive-variation-color) 0.25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.negative-variation-border {
+  border-left-color: var(--negative-variation-color);
+}
+
+.stock-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.stock-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stock-description .title {
+  color: var(--text-color);
+}
+
+.stock-description .date {
+  color: var(--text-color-light);
+}
+
+.stock-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.stock-values .price {
+  color: var(--text-color);
+  margin: 0.25rem;
+  font-weight: 500;
+}
+
+.stock-values .variation {
+  background-color: var(--positive-variation-color);
+  color: var(--secundary-color);
+  padding: 0.25rem;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  align-self: flex-end;
+}
+
+.stock-values .negative-variation {
+  background-color: var(--negative-variation-color);
+}
+
+
